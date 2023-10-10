@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+using namespace std;
+string encode( string s, int j)
+{
+    string encoded ;
+    for (int i = 0; i < s.length(); ++i) {
+        if (i < j) {
+            encoded =encoded+s[i];
+        } else {
+            encoded =encoded+char(s[i] + 3);
+        }
+    }
+    return encoded;
+}
+
+string decode(string encodedstr, int j) {
+    string decoded ;
+    for (int i = 0; i < encodedstr.length(); ++i) {
+        if (i < j) {
+            decoded =decoded + encodedstr[i];
+        } else {
+            decoded =decoded + char(encodedstr[i] - 3);
+        }
+    }
+    return decoded;
+}
+
+int main() {
+    string samplestring = "I am a student";
+    int sampleinteger = 2;
+
+
+    string encodedstring = encode(samplestring, sampleinteger);
+    cout << "Encoded String: " << encodedstring <<endl;
+
+   string decodedstring = decode(encodedstring, sampleinteger);
+   cout << "Decoded String: " << decodedstring <<endl;
+
+    return 0;
+}
