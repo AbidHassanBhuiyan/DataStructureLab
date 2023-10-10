@@ -1,0 +1,159 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct student{
+
+    int id,no_sememester,no_credit;
+    float cgpa;
+
+};
+
+int main()
+{
+    student s1,s2,s3,s4,s5,s6,s7,s8,s9,s10;
+    s1.id            =1;
+    s1.no_sememester =4;
+    s1.no_credit     =50;
+    s1.cgpa          =3.63;
+    s2.id            =2;
+    s2.no_sememester =6;
+    s2.no_credit     =60;
+    s2.cgpa          =3.23;
+    s3.id            =3;
+    s3.no_sememester =6;
+    s3.no_credit     =66;
+    s3.cgpa          =3.83;
+    s4.id            =4;
+    s4.no_sememester =7;
+    s4.no_credit     =98;
+    s4.cgpa          =3.94;
+    s5.id            =5;
+    s5.no_sememester =7;
+    s5.no_credit     =87;
+    s5.cgpa          =3.41;
+    s6.id            =6;
+    s6.no_sememester =8;
+    s6.no_credit     =90;
+    s6.cgpa          =3.11;
+    s7.id            =7;
+    s7.no_sememester =5;
+    s7.no_credit     =65;
+    s7.cgpa          =3.44;
+    s8.id            =8;
+    s8.no_sememester =7;
+    s8.no_credit     =78;
+    s8.cgpa          =2.73;
+    s9.id            =9;
+    s9.no_sememester =3;
+    s9.no_credit     =40;
+    s9.cgpa          =3.78;
+    s10.id            =10;
+    s10.no_sememester =5;
+    s10.no_credit     =75;
+    s10.cgpa          =3.66;
+
+    if(s1.cgpa>=3.75){
+        cout<<"Scholarship Student ID:"<<s1.id<<endl;
+    }
+    if(s2.cgpa>=3.75){
+        cout<<"Scholarship Student ID:"<<s2.id<<endl;
+    }
+    if(s3.cgpa>=3.75){
+        cout<<"Scholarship Student ID:"<<s3.id<<endl;
+    }
+    if(s4.cgpa>=3.75){
+        cout<<"Scholarship Student ID:"<<s4.id<<endl;
+    }
+    if(s5.cgpa>=3.75){
+        cout<<"Scholarship Student ID:"<<s5.id<<endl;
+    }
+    if(s6.cgpa>=3.75){
+        cout<<"Scholarship Student ID:"<<s6.id<<endl;
+    }
+    if(s7.cgpa>=3.75){
+        cout<<"Scholarship Student ID:"<<s7.id<<endl;
+    }
+    if(s8.cgpa>=3.75){
+        cout<<"Scholarship Student ID:"<<s8.id<<endl;
+    }
+    if(s9.cgpa>=3.75){
+        cout<<"Scholarship Student ID:"<<s9.id<<endl;
+    }
+    if(s10.cgpa>=3.75){
+        cout<<"Scholarship Student ID:"<<s10.id<<endl;
+    }
+    if(s1.no_credit>=50){
+        cout<<"ID:"<<s1.id<<endl;
+        cout<<"The Student has completed 50 credits"<<endl;
+    }
+    if(s2.no_credit>=50){
+        cout<<"ID:"<<s2.id<<endl;
+        cout<<"The Student has completed 50 credits"<<endl;
+    }
+    if(s3.no_credit>=50){
+        cout<<"ID:"<<s3.id<<endl;
+        cout<<"The Student has completed 50 credits"<<endl;
+    }
+    if(s4.no_credit>=50){
+        cout<<"ID:"<<s4.id<<endl;
+        cout<<"The Student has completed 50 credits"<<endl;
+    }
+    if(s5.no_credit>=50){
+        cout<<"ID:"<<s5.id<<endl;
+        cout<<"The Student has completed 50 credits"<<endl;
+    }
+    if(s6.no_credit>=50){
+        cout<<"ID:"<<s6.id<<endl;
+        cout<<"The Student has completed 50 credits"<<endl;
+    }
+    if(s7.no_credit>=50){
+        cout<<"ID:"<<s7.id<<endl;
+        cout<<"The Student has completed 50 credits"<<endl;
+    }
+    if(s8.no_credit>=50){
+        cout<<"ID:"<<s8.id<<endl;
+        cout<<"The Student has completed 50 credits"<<endl;
+    }
+    if(s9.no_credit>=50){
+        cout<<"ID:"<<s9.id<<endl;
+        cout<<"The Student has completed 50 credits"<<endl;
+    }
+    if(s10.no_credit>=50){
+        cout<<"ID:"<<s10.id<<endl;
+        cout<<"The Student has completed 50 credits"<<endl;
+    }
+    if(s1.no_sememester>=2 && s1.no_credit>=28){
+        cout<<"ID:"<<s1.id<<endl;
+    }
+    if(s2.no_sememester>=2 && s2.no_credit>=28){
+        cout<<"ID:"<<s2.id<<endl;
+    }
+    if(s3.no_sememester>=2 && s3.no_credit>=28){
+        cout<<"ID:"<<s3.id<<endl;
+    }
+    if(s4.no_sememester>=2 && s4.no_credit>=28){
+        cout<<"ID:"<<s4.id<<endl;
+    }
+    if(s5.no_sememester>=2 && s5.no_credit>=28){
+        cout<<"ID:"<<s5.id<<endl;
+    }
+    if(s6.no_sememester>=2 && s6.no_credit>=28){
+        cout<<"ID:"<<s6.id<<endl;
+    }
+    if(s7.no_sememester>=2 && s7.no_credit>=28){
+        cout<<"ID:"<<s7.id<<endl;
+    }
+    if(s8.no_sememester>=2 && s8.no_credit>=28){
+        cout<<"ID:"<<s8.id<<endl;
+    }
+    if(s9.no_sememester>=2 && s9.no_credit>=28){
+        cout<<"ID:"<<s9.id<<endl;
+    }
+    if(s10.no_sememester>=2 && s10.no_credit>=28){
+        cout<<"ID:"<<s10.id<<endl;
+    }
+
+return 0;
+}
+
