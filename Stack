@@ -1,0 +1,59 @@
+#include <iostream>
+#include <stack>
+
+class CustomStack {
+private:
+    std::stack<int> myStack;
+
+public:
+    bool isEmpty() {
+        return myStack.empty();
+    }
+
+    void push(int value) {
+        if (isEmpty()) {
+            std::cout << "Stack is empty" << value << std::endl;
+        } else {
+            std::cout << "Top of the stack before push: " << myStack.top() << std::endl;
+        }
+
+        myStack.push(value);
+        std::cout << "Pushed: " << value << std::endl;
+    }
+
+    void pop() {
+        if (isEmpty()) {
+            std::cout << "Stack is empty. Cannot pop." << std::endl;
+        } else {
+            std::cout << "Popped: " << myStack.top() << std::endl;
+            myStack.pop();
+        }
+    }
+
+    void show_top() {
+        if (isEmpty()) {
+            std::cout << "Stack is empty. Cannot show top." << std::endl;
+        } else {
+            std::cout << "Top of the stack: " << myStack.top() << std::endl;
+        }
+    }
+};
+
+int main() {
+    CustomStack myCustomStack;
+
+    myCustomStack.pop();
+    myCustomStack.show_top();
+
+    myCustomStack.push(10);
+    myCustomStack.push(20);
+    myCustomStack.show_top();
+
+    myCustomStack.pop();
+    myCustomStack.show_top();
+
+    myCustomStack.pop();
+    myCustomStack.pop();
+
+    return 0;
+}
